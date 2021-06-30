@@ -3,9 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Shape {
-  
     int length,width;
-  
     boolean isSquare() throws NotASquareException
     {
         if(length==width)
@@ -26,22 +24,18 @@ public class Shape {
         S.length=ip.nextInt();
         System.out.println("Enter width : ");
         S.width=ip.nextInt();
-      
-        try
-        {
+        try{
             if(S.isSquare())
             {
                 System.out.println("Shape is square");
             }
         }
-      
         catch(NotASquareException e)
         {
             System.out.println("NotASquareException has occurred");
         }
     }
 }
-
 class NotASquareException extends Exception
 {
     NotASquareException()
