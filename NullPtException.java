@@ -34,4 +34,5 @@ public class NullPtException{
             System.out.println("NullPointerException has occurred");
         }
     }
+
 }
